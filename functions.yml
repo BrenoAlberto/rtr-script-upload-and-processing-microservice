@@ -1,5 +1,6 @@
 processScript:
   handler: handler.process_script_handler
+  description: Extracts key information (characters, scenes, etc.) from a play script 
   events:
     - http:
         path: /process-script
