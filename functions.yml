@@ -1,8 +1,10 @@
 processScript:
   handler: handler.process_script_handler
-  description: Extracts key information (characters, scenes, etc.) from a play script 
+  description: Extracts key information (characters, scenes, etc.) from a play script
   events:
     - http:
         path: /process-script
         method: post
         # cors: true
+  layers:
+    - ${ssm:/spacy/${self:provider.stage}/layerARN}
