@@ -1,6 +1,5 @@
 import json
 from src.infrastructure.spacy_script_processor import SpacyScriptProcessor
-#
 
 def process_script_handler(event, context):
     try:
