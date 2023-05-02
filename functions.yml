@@ -1,0 +1,7 @@
+processScript:
+  handler: handler.process_script_handler
+  events:
+    - http:
+        path: /process-script
+        method: post
+        # cors: true
